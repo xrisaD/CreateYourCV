@@ -1,9 +1,15 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import { Navbar } from "./components/Navbar";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-   <h1>Hey</h1>
+    <>
+    <Navbar />
+    <Header />
+    <OutlinedTimeline />
+    </>
   );
 }
 
