@@ -87,9 +87,9 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url('tree.jpg');
+  /*background: url('tree.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
   height: 90vh;
 }
 

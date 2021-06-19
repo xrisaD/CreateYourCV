@@ -1,0 +1,18 @@
+/*------------ TIMELINE ------------*/
+
+.timeline {
+    padding: 0;
+}
+
+/*------------ HEADER ------------*/
+
+/*------------ HEADER TITLE------------*/
+
+.timeline .timeline_header {
+    padding-top: 7px;
+}
+
+.timeline .first_item {
+    padding-top: 7px;
+}
+
