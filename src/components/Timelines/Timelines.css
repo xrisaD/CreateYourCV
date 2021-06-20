@@ -1,0 +1,20 @@
+/*------------ TIMELINE ------------*/
+  
+  .timeline .timeline_header {
+    padding-top: 7px;
+    font-weight: bold;
+  }
+  
+  .timeline .first_item {
+    padding-top: 7px;
+  }
+  
+  .timeline .first_dot {
+    color: var(--primary-pink);
+    padding: 30px;
+  }
+
+.timelines{
+  padding-top: 200px;
+}
+  

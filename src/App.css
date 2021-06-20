@@ -48,65 +48,12 @@
   font-family: 'Shippori Mincho', serif;
 }
 
+/*------------ COLOR ------------*/
+
 :root {
   --primary-white: #FFFAFA;
   --primary-pink: #C29DB5;
   --primary-dark: rgba(255, 255, 255, 0);
 }
 
-/*------------ MENU LINKS ------------*/
 
-nav a.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.375px;
-  cursor: pointer;
-}
-
-nav ul li {
-  text-transform: uppercase;
-}
-
-.navbar-nav > li > a {
-  margin: 10px;
-  border-top: 0.1875rem solid var(--primary-dark);
-}
-
-.navbar-brand {
-  max-width: 15.25rem;
-  padding: 0 !important;
-  height: 10rem !important;
-}
-
-
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus, .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-pink);
-}
-
-
-/*------------ HEADER ------------*/
-
-.header-wrapper {
-  position: relative;
-  /*background: url('tree.jpg');
-  background-size: cover;
-  background-position: center;*/
-  height: 90vh;
-}
-
-.main-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  font-family: 'Indie Flower', cursive;
-  font-family: 'PT Serif', serif;
-  font-family: 'Shippori Mincho', serif;
-}
-
-/*------------ TYPED TEXT ------------*/
-
-.typed-text {
-  font-size: 2rem;
-}

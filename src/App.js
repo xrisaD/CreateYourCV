@@ -1,32 +1,24 @@
 import "./App.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar } from "./components/Navbar";
-import { Header } from "./components/Header";
-import workExperienceData from "./workExperience";
-import educationData from "./education";
-import { CustomTimeline} from "./components/Tmelines/Timeline";
-import { CustomTimelineChild} from "./components/Tmelines/Timeline";
-import WorkIcon from '@material-ui/icons/Work';
-import SchoolIcon from '@material-ui/icons/School';
+import { Navbar } from "./components/Navbar/Navbar";
+import { Header } from "./components/Header/Header";
+import { Timelines } from "./components/Timelines/Timelines";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <React.Fragment>
-      <Navbar />
-      <Header />
-      <CustomTimeline icon={<WorkIcon />} title={"Work Experience"} 
-      childs={workExperienceChilds()}/>
-    </React.Fragment>
+    <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Header} />
+
+          <Route path="/resume" component={Timelines} />
+        </Switch>
+    </BrowserRouter>
+
   )
 }
 
-const workExperienceChilds = () => {
-  return (
-    Object.values(workExperienceData).map((value) =>{
-      return <CustomTimelineChild value={value}/>
-    })
-  );
-}
 
 export default App;
