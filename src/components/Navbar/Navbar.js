@@ -3,7 +3,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import PersonalInfo from "../../PersonalInfo";
 import logo from '../../logo_dark.png';
-import { NavLink } from "react-router-dom";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Navbar, Nav } from "react-bootstrap";
 
 const mapping = {
     "about_me" : "About Me",
@@ -19,14 +20,13 @@ const addLis = () =>  {
     for (var i = 0; i < arrayLength; i++) {
         arrayOfLis.push(
         <li className="nav-item">
-            <NavLink
-                exact
+            <Nav.Link
                 className="nav-link"
-                activeClassName="is-active"
-                to={"/"+ mapping[PersonalInfo.components[i]] } 
                 >
-                { mapping[PersonalInfo.components[i]] }
-            </NavLink>
+                <Link to={PersonalInfo.components[i] } > 
+                    { mapping[PersonalInfo.components[i]] } 
+                </Link>
+            </Nav.Link>
         </li>);
     }
     return arrayOfLis;
@@ -34,29 +34,79 @@ const addLis = () =>  {
 
 
 
-export const Navbar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <img src={logo} alt=""/>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
+class NavBar extends React.Component {
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item active">  
-                        <NavLink
-                            exact
-                            className="nav-link"
-                            activeClassName="is-active"
-                            to="/"
-                            >
-                            About
-                        </NavLink>
-                     </li>
+    constructor(props) {
+        super(props);
+        this.scrollToTop = this.scrollToTop.bind(this);
+      }
+    
+      componentDidMount() {
+    
+        Events.scrollEvent.register('begin', function () {
+          console.log("begin", arguments);
+        });
+    
+        Events.scrollEvent.register('end', function () {
+          console.log("end", arguments);
+        });
+    
+      }
+      scrollToTop() {
+        scroll.scrollToTop();
+      }
+      scrollTo() {
+        scroller.scrollTo('scroll-to-element', {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        })
+      }
+      scrollToWithContainer() {
+    
+        let goToContainer = new Promise((resolve, reject) => {
+    
+          Events.scrollEvent.register('end', () => {
+            resolve();
+            Events.scrollEvent.remove('end');
+          });
+    
+          scroller.scrollTo('scroll-container', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+          });
+    
+        });
+    
+        goToContainer.then(() =>
+          scroller.scrollTo('scroll-container-second-element', {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+            containerId: 'scroll-container'
+          }));
+      }
+      componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+      }
+      render() {
+        return (
+            <Navbar bg="light" expand="lg" fixed="top">
+                <Navbar.Brand href="#"> <img src={logo} alt=""/></Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                    className="mr-auto my-2 my-lg-0"
+                    style={{ maxHeight: '100px' }}
+                    navbarScroll>
                     {addLis()}
-                </ul>
-            </div>
-        </nav>
-    );
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        )
+    }
 }
+
+export { NavBar }

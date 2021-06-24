@@ -15,12 +15,6 @@ nav ul li {
     border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-brand {
-    max-width: 15.25rem;
-    padding: 0 !important;
-    height: 5rem !important;
-}
-
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus, .navbar-nav > li > a:hover {
     border-top: 0.1875rem solid var(--primary-pink);
