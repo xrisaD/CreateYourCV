@@ -1,6 +1,6 @@
 import "./App.css";
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import PersonalInfo from "./PersonalInfo";
 import { NavBar } from "./components/Navbar/NavBar";
 import { Header } from "./components/Header/Header";

@@ -50,25 +50,26 @@ export default{
     projects: {
         "3": {
             title: "Chess Game",
-            description: "Chess is a game played between two opponents on opposite sides of a board containing 64 squares of alternating colors. Each player has 16 pieces: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns. The goal of the game is to checkmate the other king. ... Chess is one of many great alternatives to video games.",
+            description: "Chess is a game played between two opponents on opposite sides of ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree_2.jpg"
+            image: "almond_tree.jpg"
         },
         "2": {
             title: "Hungry Snake Game",
-            description: ""
+            description: "",
+            image: "almond_tree.jpg"
         },
         "1": {
             title: "Super Mario Bros Clone",
-            description: "The Super Mario games are typically in the fictional Mushroom Kingdom with Mario as the player character. He is often joined by his brother, Luigi, and occasionally by other members of the Mario cast. As a platform game, the player runs and jumps across platforms and atop enemies in themed levels.",
+            description: "The Super Mario games are typically in the fictional Mushroom Kingdom with Mario as the player character. ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree_2.jpg"
+            image: "almond_tree.jpg"
         },
         "0": {
             title: "Hungry Snake Game",
-            description: "Hungry Snake Game is a fun and challenging mobile game to play. The game rule is simple as you just need to swipe your finger on your mobile phone's screen to move the Snake around. On his adventure, he has to eat the food to grow stronger, collect golds and diamonds, and try to avoid rocks.",
+            description: "Hungry Snake Game is a fun and challenging mobile game to play. ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree_2.jpg"
+            image: "almond_tree.jpg"
         }
     }
 

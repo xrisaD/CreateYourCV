@@ -3,7 +3,7 @@ import React from 'react';
 import Typed from 'react-typed';
 import ReactRoundedImage from "react-rounded-image";
 import PersonalInfo from "../../PersonalInfo";
-import MyPhoto from "../../generated_photos.jpg";
+import MyPhoto from "../../images/generated_photos.jpg";
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
