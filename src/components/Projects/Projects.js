@@ -10,7 +10,7 @@ const addItems = () => {
             return  <Carousel.Item interval={1500}>
               <img
                 className="d-block w-100"
-                src={MyPhoto}
+                src={require("../../images/tree.jpg")}
                 alt= {value.title}
               />
 

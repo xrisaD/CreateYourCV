@@ -20,13 +20,9 @@ const addLis = () =>  {
     for (var i = 0; i < arrayLength; i++) {
         arrayOfLis.push(
         <li className="nav-item">
-            <Nav.Link
-                className="nav-link"
-                >
-                <Link to={PersonalInfo.components[i] } > 
-                    { mapping[PersonalInfo.components[i]] } 
-                </Link>
-            </Nav.Link>
+            <Link className="nav-link" to={PersonalInfo.components[i] } smooth={true} spy={true}> 
+                { mapping[PersonalInfo.components[i]] } 
+            </Link>
         </li>);
     }
     return arrayOfLis;

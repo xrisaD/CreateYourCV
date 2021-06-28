@@ -7,6 +7,7 @@ import { Header } from "./components/Header/Header";
 import { Timelines } from "./components/Timelines/Timelines";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Projects } from "./components/Projects/Projects";
+import { Skills } from "./components/Skills/Skills";
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
@@ -15,7 +16,7 @@ const mapping = {
   "resume" : <Timelines />,
   "projects": <Projects />,
   "contact_me": "Contact Me",
-  "skills": "Skills"
+  "skills": <Skills />
 }
 const addElements = () => {
   const arrayOfElements = [];

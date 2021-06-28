@@ -1,5 +1,5 @@
 export default{
-    components:  ["about_me", "resume", "projects", "skills"],
+    components:  ["about_me",  "skills", "projects", "resume"],
     intro: "Hi! My name is Temi!",
     description : "I am a full stack developer who enjoys working in an agile environment with a collaborative team. I am passionate about creating modular, scalable, smart looking web apps. I enjoy balancing the need for test driven and benchmark driven development, modern creative design, and task completion efficiency and quality. I specialize in. And node. J's full stack development.",
     list: ["Software Engineer", "Full stack developer"],
@@ -11,7 +11,7 @@ export default{
         "github": "https://github.com/"
     },
 
-    workExperience: {
+    work_experience: {
         "2": {
             title: "Senior Software Developer",
             company: "Bsr Taxi",
@@ -52,25 +52,40 @@ export default{
             title: "Chess Game",
             description: "Chess is a game played between two opponents on opposite sides of ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree.jpg"
+            image: "images/tree.jpg"
         },
         "2": {
             title: "Hungry Snake Game",
             description: "",
-            image: "almond_tree.jpg"
+            image: "images/tree.jpg"
         },
         "1": {
             title: "Super Mario Bros Clone",
             description: "The Super Mario games are typically in the fictional Mushroom Kingdom with Mario as the player character. ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree.jpg"
+            image: "images/tree.jpg"
         },
         "0": {
             title: "Hungry Snake Game",
             description: "Hungry Snake Game is a fun and challenging mobile game to play. ",
             sources: { "Github": "https://material-ui.com/components/grid/" },
-            image: "almond_tree.jpg"
+            image: "images/tree.jpg"
+        }
+    },
+
+    skills: {
+       
+        "2": {
+            title: "C++",
+            percentage: 100
+        },
+        "1": {
+            title: "Python",
+            percentage: 50
+        },
+        "0": {
+            title: "Java",
+            percentage: 100
         }
     }
-
 }

@@ -10,7 +10,7 @@ export const Timelines = () => {
     return (
         <React.Fragment>
           <div className="timelines">
-            <CustomTimeline className="timeline" icon={<WorkIcon />} title={"Work Experience"}  childs={childs(PersonalInfo.workExperience)}/>
+            <CustomTimeline className="timeline" icon={<WorkIcon />} title={"Work Experience"}  childs={childs(PersonalInfo.work_experience)}/>
             <CustomTimeline className="timeline" icon={<SchoolIcon />} title={"Education"} childs={childs(PersonalInfo.education)}/>
           </div>
         </React.Fragment>
