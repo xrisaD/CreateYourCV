@@ -42,41 +42,45 @@ const AddSocialMedia = (data) => {
 const AddHeading = (props) => {
     var intro = props.data.intro
     var list = props.data.list
-    return (
-        <div className="first-wrapper">
-            <div className="main-info">
-                <div style={{ display: "flex" }}>
-                    <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
+    if (props.data.components.includes("heading")){
+        return (
+            <div className="first-wrapper">
+                <div className="main-info">
+                    <div style={{ display: "flex" }}>
+                        <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
+                    </div>
+                    <h3> { intro } </h3>               
+                    <Typed
+                        className="typed-text"
+                        strings={list}
+                        typeSpeed={40}
+                        backSpeed={60}
+                        loop
+                    />
                 </div>
-                <h3> { intro } </h3>               
-                <Typed
-                    className="typed-text"
-                    strings={list}
-                    typeSpeed={40}
-                    backSpeed={60}
-                    loop
-                />
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 const AddDetails = (props) => {
     const classes = useStyles();
-    return (
-        <div className="description">   
-            <div className="social-media">
-                <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" p={1} m={1} >
-                    { AddSocialMedia(props.data) }
+    if (props.data.components.includes("details")){
+        return (
+            <div className="description">   
+                <div className="social-media">
+                    <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" p={1} m={1} >
+                        { AddSocialMedia(props.data) }
+                    </Box>
+                </div>
+                <Box m={2} pt={3} pb={3}>
+                    <Paper elevation={3} className={classes.paper}>
+                        {props.data.description}  
+                    </Paper>
                 </Box>
             </div>
-            <Box m={2} pt={3} pb={3}>
-                <Paper elevation={3} className={classes.paper}>
-                    {props.data.description}  
-                </Paper>
-            </Box>
-        </div>
-    )
+        )
+    }
     
 }
 

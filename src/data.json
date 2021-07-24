@@ -2,6 +2,8 @@
     "components":  ["about me"],
     
     "about_me": {
+        "components": ["heading", "details"],
+
         "intro": "Hi! My name is Temi!",
         "list": ["Software Engineer", "Full stack developer"],
 
