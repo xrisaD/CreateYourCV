@@ -7,21 +7,21 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import { Navbar, Nav } from "react-bootstrap";
 
 const mapping = {
-    "about_me" : "About Me",
-    "resume" : "Resume",
+    "about me": "About Me",
+    "timeline" : "Timeline",
     "projects": "Projects",
     "contact_me": "Contact Me",
     "skills": "Skills"
 }
 
-const addLis = () =>  {
+const addComponents = (components) =>  {
     const arrayOfLis = [];
-    var arrayLength = PersonalInfo.components.length;
+    var arrayLength = components.length;
     for (var i = 0; i < arrayLength; i++) {
         arrayOfLis.push(
         <li className="nav-item">
-            <Link className="nav-link" to={PersonalInfo.components[i] } smooth={true} spy={true}> 
-                { mapping[PersonalInfo.components[i]] } 
+            <Link className="nav-link" to={components[i] } smooth={true} spy={true}> 
+                { mapping[components[i]] } 
             </Link>
         </li>);
     }
@@ -97,7 +97,7 @@ class NavBar extends React.Component {
                     className="mr-auto my-2 my-lg-0"
                     style={{ maxHeight: '100px' }}
                     navbarScroll>
-                    {addLis()}
+                    {addComponents(this.props.data)}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

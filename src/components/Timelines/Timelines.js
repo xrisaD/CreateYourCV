@@ -1,17 +1,16 @@
 import "./Timelines.css";
 import React from 'react';
-import PersonalInfo from "../../PersonalInfo";
 import { CustomTimeline} from "./Timeline";
 import { CustomTimelineChild} from "./Timeline";
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 
-export const Timelines = () => {
+export const Timelines = (props) => {
     return (
         <React.Fragment>
           <div className="timelines">
-            <CustomTimeline className="timeline" icon={<WorkIcon />} title={"Work Experience"}  childs={childs(PersonalInfo.work_experience)}/>
-            <CustomTimeline className="timeline" icon={<SchoolIcon />} title={"Education"} childs={childs(PersonalInfo.education)}/>
+            <CustomTimeline className="timeline" icon={<WorkIcon />} title={"Work Experience"}  childs={childs(props.data.work_experience)}/>
+            <CustomTimeline className="timeline" icon={<SchoolIcon />} title={"Education"} childs={childs(props.data.education)}/>
           </div>
         </React.Fragment>
     );
