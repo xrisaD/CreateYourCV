@@ -2,7 +2,7 @@ import "./Navbar.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import PersonalInfo from "../../PersonalInfo";
-import logo from '../../images/logo_dark.png';
+import logo from '../../images/logo.png';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { Navbar, Nav } from "react-bootstrap";
 

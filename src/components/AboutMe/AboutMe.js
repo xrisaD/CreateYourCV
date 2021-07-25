@@ -49,14 +49,16 @@ const AddHeading = (props) => {
                     <div style={{ display: "flex" }}>
                         <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
                     </div>
-                    <h3> { intro } </h3>               
-                    <Typed
-                        className="typed-text"
-                        strings={list}
-                        typeSpeed={40}
-                        backSpeed={60}
-                        loop
-                    />
+                    <h3> { intro } </h3>
+                    <div>             
+                        <Typed
+                            className="typed-text"
+                            strings={list}
+                            typeSpeed={40}
+                            backSpeed={60}
+                            loop
+                        />
+                    </div>  
                 </div>
             </div>
         )
