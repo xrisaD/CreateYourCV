@@ -1,5 +1,5 @@
 {
-    "components":  ["about me"],
+    "components":  ["about me", "timeline", "skills"],
     
     "about_me": {
         "components": ["heading", "details"],
@@ -82,20 +82,35 @@
     },
 
     "skills": {
+        "3": {
+            "title": "Go",
+            "percentage": 80,
+            "extra_text": "Good",
+            "color": "#f88"
+        },
+        "4": {
+            "title": "Javascript",
+            "percentage": 60,
+            "extra_text": "Good",
+            "color": "#f88"
+        },
         "2": {
             "title": "C++",
             "percentage": 100,
-            "extra_text": "Good"
+            "extra_text": "Good",
+            "color": "blue"
         },
         "1": {
             "title": "Python",
             "percentage": 50,
-            "extra_text": "Good"
+            "extra_text": "Good",
+            "color": "#f88"
         },
         "0": {
             "title": "Java",
             "percentage": 100,
-            "extra_text": "Good"
+            "extra_text": "Good",
+            "color": "blue"
         }
     }
 }

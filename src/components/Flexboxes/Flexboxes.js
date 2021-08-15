@@ -1,19 +1,25 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 
-export default function Flexboxes(bars) {
+function createBoxes(bars) {
+  return bars.map((value) => {
+    console.log(value)
+    return <Box
+            p={1}>
+            <p> {value} </p> 
+          </Box>
+})
+}
+export default function Flexboxes(props) {
   return (
-    Object.values(bars).map((value) =>{
-        <Box
-          display="flex"
-          flexWrap="wrap"
-          p={1}
-          m={1}
-          bgcolor="background.paper"
-          css={{ maxWidth: 300 }}
-        >
-            <p>sksk</p> 
-        </Box>
-    })
+    <Box
+      display="flex"   
+      flexWrap="wrap"
+      justifyContent="space-evenly"
+      alignItems="center"
+      p={1}
+      m={1}>
+      { createBoxes(props.bars)}
+    </Box>
   );
 }

@@ -1,26 +1,29 @@
 import "./Skills.css";
 import React from 'react';
-import { CircularProgressbarWithChildren   } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import PersonalInfo from "../../PersonalInfo";
 import Flexboxes from "../Flexboxes/Flexboxes";
+import { red } from "@material-ui/core/colors";
  
 function createBars(skills) {
-    var progressBars = {}
-    Object.values(skills).map((value) =>{
-            progressBars[value.title] = 
-            <CircularProgressbarWithChildren value={value.percentage}>
+    var bars = [];
+    Object.values(skills).map(( value) =>{     
+            bars.push(<CircularProgressbarWithChildren value={value.percentage} 
+                styles={buildStyles({pathColor: value.color})}>
                 <p>{value.title} </p>
                 <p>{value.extra_text}</p>
-            </CircularProgressbarWithChildren>  
+            </CircularProgressbarWithChildren>);  
         }
     )
-    return progressBars
+    return bars;
 }
 export const Skills = (props) => {
     const bars = createBars(props.data)
    return(
-        <Flexboxes bars />
+    <div>
+        <h2 className="subtitle"> Skills </h2>
+        <Flexboxes bars = {bars} />
+    </div>
    );
 
 }

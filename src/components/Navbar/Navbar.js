@@ -1,7 +1,6 @@
 import "./Navbar.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import PersonalInfo from "../../PersonalInfo";
 import logo from '../../images/logo.png';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { Navbar, Nav } from "react-bootstrap";
@@ -53,7 +52,7 @@ class NavBar extends React.Component {
       }
       scrollTo() {
         scroller.scrollTo('scroll-to-element', {
-          duration: 800,
+          duration: 300,
           delay: 0,
           smooth: 'easeInOutQuart'
         })

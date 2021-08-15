@@ -1,24 +1,3 @@
-/*------------ VARIABLES ------------*/
-
-:root {
-  --primary-white: #FFFAFA;
-  --primary-basic-color: #C29DB5;
-  --primary-dark: rgba(255, 255, 255, 0);
-  --header-image: url('./images/header_photo.jpg');
-}
-
-
-/*------------ FONT ------------*/
-
-/* @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Serif&family=Shippori+Mincho&display=swap');
-
-* {
-  font-family: 'Caveat', cursive;
-  font-family: 'Indie Flower', cursive;
-  font-family: 'PT Serif', serif;
-  font-family: 'Shippori Mincho', serif;
-} */
-
 /*------------ EXTRAS ------------*/
 
 .App {
@@ -60,7 +39,21 @@
   }
 }
 
+.subtitle {
+  color: var(--primary-basic-color);
+  padding: 100px;
+  text-align: center;
+}
 
 
+/*------------ FONT ------------*/
 
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=PT+Serif&family=Shippori+Mincho&display=swap');
+
+* {
+  font-family: 'Caveat', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'PT Serif', serif;
+  font-family: 'Shippori Mincho', serif;
+} */
 

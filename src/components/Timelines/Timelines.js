@@ -8,6 +8,7 @@ import SchoolIcon from '@material-ui/icons/School';
 export const Timelines = (props) => {
     return (
         <React.Fragment>
+          <h2 className="subtitle"> Timeline </h2>
           <div className="timelines">
             <CustomTimeline className="timeline" icon={<WorkIcon />} title={"Work Experience"}  childs={childs(props.data.work_experience)}/>
             <CustomTimeline className="timeline" icon={<SchoolIcon />} title={"Education"} childs={childs(props.data.education)}/>

@@ -1,0 +1,8 @@
+/*------------ VARIABLES ------------*/
+
+:root {
+    --primary-white: #FFFAFA;
+    --primary-basic-color: #C29DB5;
+    --primary-dark: rgba(255, 255, 255, 0);
+    --header-image: url('./images/header_photo.jpg');
+  }

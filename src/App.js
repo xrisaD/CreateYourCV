@@ -1,8 +1,8 @@
+import "./data.css";
 import "./App.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PersonalInfo from "./PersonalInfo"
-import { NavBar } from "./components/NavBar/NavBar";
+import { NavBar } from "./components/Navbar/Navbar";
 import { AboutMe } from "./components/AboutMe/AboutMe"
 import { Timelines } from "./components/Timelines/Timelines";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
