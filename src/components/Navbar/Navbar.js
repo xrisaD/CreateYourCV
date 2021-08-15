@@ -10,7 +10,8 @@ const mapping = {
     "timeline" : "Timeline",
     "projects": "Projects",
     "contact_me": "Contact Me",
-    "skills": "Skills"
+    "skills": "Skills",
+    "languages": "Languages"
 }
 
 const addComponents = (components) =>  {

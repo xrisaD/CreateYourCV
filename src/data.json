@@ -1,5 +1,5 @@
 {
-    "components":  ["about me", "timeline", "skills"],
+    "components":  ["about me", "timeline", "skills", "languages"],
     
     "about_me": {
         "components": ["heading", "details"],
@@ -11,8 +11,10 @@
         "description": "I am a full stack developer who enjoys working in an agile environment with a collaborative team. I am passionate about creating modular, scalable, smart looking web apps. I enjoy balancing the need for test driven and benchmark driven development, modern creative design, and task completion efficiency and quality. I specialize in. And node. J's full stack development.",
         "email": "temeka-dwight@gmail.com",
         "social_media": {
-            "linkedin": "https://www.linkedin.com/in/chrysa-dikonimaki-a6a099156/",
-            "github": "https://github.com/"
+            "linkedin": "#",
+            "github": "#",
+            "facebook": "#",
+            "instagram": "#"
         }
 
     },
@@ -111,6 +113,20 @@
             "percentage": 100,
             "extra_text": "Good",
             "color": "blue"
+        }
+    },
+    "languages":{
+        "0": {
+            "title": "English",
+            "percentage": 100,
+            "extra_text": "Native",
+            "color": "blue"
+        },
+        "1": {
+            "title": "Spanish",
+            "percentage": 50,
+            "extra_text": "Good",
+            "color": "#f88"
         }
     }
 }

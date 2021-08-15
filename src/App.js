@@ -8,6 +8,7 @@ import { Timelines } from "./components/Timelines/Timelines";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
+import { Languages } from "./components/Languages/Languages";
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import data from './data.json';
 
@@ -16,7 +17,8 @@ const mapping = {
   "timeline" : <Timelines data = { data.timeline } />,
   "projects": <Projects data = { data.projects }/>,
   "contact me": <div></div>,
-  "skills": <Skills data = {data.skills} />
+  "skills": <Skills data = {data.skills} />,
+  "languages": <Languages data = {data.languages} />
 }
 
 const addElements = () => {
