@@ -1,10 +1,10 @@
 {
-    "components":  ["about me", "timeline", "skills", "languages"],
+    "components":  ["about me", "timeline", "skills", "languages", "contact_me"],
     
     "about_me": {
         "components": ["heading", "details"],
 
-        "intro": "Hi! My name is Temi!",
+        "intro": "Tami Dorota",
         "list": ["Software Engineer", "Full stack developer"],
 
         "full_name": "Temeka Dwight",
