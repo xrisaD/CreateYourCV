@@ -40,7 +40,7 @@ tag: projects <br>
 name: contact_me_1
 ![contact_me_1](/images/contact_me_1.PNG)
  
-You can use an alternative contact_me component, called contact_me_2 but we strongly recommend using the contact_me_1, which is shown below. However, if you really want to use the second option you can use EmailJS. 
+You can use an alternative contact_me component, called contact_me_2 but we strongly recommend using the contact_me_1, which is shown below. However, if you really want to use the second option you can use the EmailJS. 
 
 ![contact_me_2](/images/contact_me_2.PNG)
 <br>
