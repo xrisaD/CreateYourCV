@@ -9,8 +9,12 @@ You can style your CV by changing two files: data.json and data.css.
 name: about_me 
 The about_me component has 2 subcomponents, the header and the details. You can skip any of them, if you want.
   #### 1. Header 
-![Header](/images/header.PNG)
- #### 2. Details 
+  name: header
+  ![header](/images/header.PNG)
+
+  #### 2. Details 
+  name: details
+  ![details](/images/details.PNG)
 
 ### 2. Timeline <br>
 name: timeline <br>
