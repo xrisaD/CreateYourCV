@@ -9,7 +9,8 @@ const mapping = {
     "about_me": "About Me",
     "timeline" : "Timeline",
     "projects": "Projects",
-    "contact_me": "Contact Me",
+    "contact_me_1": "Contact Me",
+    "contact_me_2": "Contact Me",
     "skills": "Skills",
     "languages": "Languages"
 }
@@ -40,11 +41,11 @@ class NavBar extends React.Component {
       componentDidMount() {
     
         Events.scrollEvent.register('begin', function () {
-          console.log("begin", arguments);
+          
         });
     
         Events.scrollEvent.register('end', function () {
-          console.log("end", arguments);
+        
         });
     
       }

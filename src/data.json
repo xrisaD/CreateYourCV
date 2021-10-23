@@ -1,8 +1,8 @@
 {
-    "components":  ["about_me", "timeline", "skills", "languages", "projects", "contact_me"],
+    "components":  ["about_me", "timeline", "skills", "languages", "projects", "contact_me_1"],
     
     "about_me": {
-        "components": ["heading", "details"],
+        "components": ["details"],
 
         "heading": {
             "intro": "Tami Dorota",
@@ -129,5 +129,9 @@
         }
     },
 
-    "contact_me": ""
+    "contact_me": {
+        "email":"temeka-dwight@gmail.com",
+        "text": "Don't hesitate to contact me!",
+        "button_text": "Send E-mail!"
+    }
 }

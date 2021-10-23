@@ -91,7 +91,7 @@ const CheckHeading = (props) => {
 
 export const AboutMe = (props) => {
     return (
-        <div className="header-wrapper" key="about_me">
+        <div className="basic-wrapper" key="about_me">
             { CheckHeading(props.data) }
             { CheckDetails(props.data) }
         </div>

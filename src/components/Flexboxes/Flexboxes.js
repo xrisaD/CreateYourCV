@@ -2,10 +2,10 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 
 function createBoxes(bars) {
-  return bars.map((value) => {
-    return <Box
+  return Object.entries(bars).map(([key, value]) => {
+    return <Box key = {key}
             p={1}>
-            <p> {value} </p> 
+             {value}  
           </Box>
 })
 }

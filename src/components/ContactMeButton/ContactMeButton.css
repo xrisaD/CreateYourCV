@@ -1,0 +1,19 @@
+
+.contact_me_elements {
+    background-color: var(--primary-basic-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    color:white;
+    font-weight: bold;
+}
+
+.contact_me_button {
+    background-color: var(--primary-dark);
+}
+.contact_me_button:hover {
+    opacity: 0.5;
+  }

@@ -8,9 +8,10 @@ const addSources = (sources) => {
   return (
     Object.entries(sources).map(([key, value]) =>{
           if (key === "github"){
-            return(<a href={value}> <GitHubIcon /> </a>)
-          }else{
-            return(<a href={value}> <LinkIcon /> </a>)
+            return(<a href={value} key={key}> <GitHubIcon /> </a>)
+          }else{ 
+            // this symbol will be returned for any other source
+            return(<a href={value} key={key}> <LinkIcon /> </a>)
           }
         }
       )
@@ -19,11 +20,11 @@ const addSources = (sources) => {
 
 const addItems = (projects) => {  
     return (
-      Object.values(projects).map((value) =>{
+      Object.entries(projects).map(([key, value]) =>{
             return(
-            <Carousel.Item interval={1500}>
+            <Carousel.Item interval={1500} key={"item"+key}>
               <div className="carousel_background" ></div>
-              <Carousel.Caption >
+              <Carousel.Caption  key={"caption"+key}>
                 <h3> {value.title} </h3>
                 <div> { addSources(value.sources)} </div>
                 <p> {value.description} </p>

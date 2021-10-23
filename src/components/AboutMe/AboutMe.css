@@ -22,7 +22,6 @@
   }
   
   .main-info{
-    padding-top: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -36,7 +35,8 @@
     padding-top: 60px;
   }
 
-  .header-wrapper{
+  .basic-wrapper{
+    padding-top: 150px;
     background-color:  var(--primary-basic-color);
   }
 
@@ -54,6 +54,6 @@
 }
 
 .paper {
-  padding: '20px';
-  margin: '20px'
+  padding: 20px;
+  margin: 20px;
 }
