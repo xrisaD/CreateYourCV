@@ -1,7 +1,6 @@
 import "./Navbar.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import logo from '../../images/logo.png';
 import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
 import { Navbar, Nav } from "react-bootstrap";
 
@@ -36,6 +35,7 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.scrollToTop = this.scrollToTop.bind(this);
+        this.logo = require('../../images/'+this.props.data.logo).default
       }
     
       componentDidMount() {
@@ -91,19 +91,20 @@ class NavBar extends React.Component {
       render() {
         return (
             <Navbar bg="light" expand="lg" fixed="top">
-                <Navbar.Brand href="#"> <img src={logo} alt=""/></Navbar.Brand>
+                <Navbar.Brand href="#"> <img src={this.logo} alt=""/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                     className="mr-auto my-2 my-lg-0"
                     style={{ maxHeight: '100px' }}
                     navbarScroll>
-                    {addComponents(this.props.data)}
+                    {addComponents(this.props.data.components)}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         )
     }
 }
+
 
 export { NavBar }

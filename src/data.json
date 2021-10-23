@@ -1,12 +1,15 @@
 {
     "components":  ["about_me", "timeline", "skills", "languages", "projects", "contact_me_1"],
     
+    "logo": "logo.png",
+    
     "about_me": {
-        "components": ["details"],
+        "components": ["heading", "details"],
 
         "heading": {
             "intro": "Tami Dorota",
-            "list": ["Software Engineer", "Full stack developer"]
+            "list": ["Software Engineer", "Full stack developer"],
+            "photo_profile": "profile.jpg"
         },
         "details":{
             "full_name": "Temeka Dwight",

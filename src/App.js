@@ -39,7 +39,7 @@ const addElements = () => {
 function App() {
   return (
     <BrowserRouter>
-        <NavBar data = {data.components} key="navbar"/>
+        <NavBar data = {data} key="navbar"/>
         { addElements() }
     </BrowserRouter>
   )

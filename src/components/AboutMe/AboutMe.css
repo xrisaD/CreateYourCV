@@ -31,12 +31,12 @@
   }
   
   
-  .main-info .typed-text {
+ .typed-text {
     padding-top: 60px;
   }
 
   .basic-wrapper{
-    padding-top: 150px;
+    padding-top: 100px;
     background-color:  var(--primary-basic-color);
   }
 
@@ -56,4 +56,10 @@
 .paper {
   padding: 20px;
   margin: 20px;
+}
+
+.profile {
+  padding-top: 50px;
+  border-radius: 50%;
+  width: 15%;
 }

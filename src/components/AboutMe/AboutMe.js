@@ -6,8 +6,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Typed from 'react-typed';
-import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "../../images/profile.jpg";
 import Box from '@material-ui/core/Box';
 
 
@@ -35,12 +33,12 @@ const AddSocialMedia = (data) => {
 const AddHeading = (props) => {
     var intro = props.intro
     var list = props.list
+    var filename = props.photo_profile
+    var image = require("../../images/" + filename).default
     return (
         <div className="first-wrapper">
             <div className="main-info">
-                <div style={{ display: "flex" }}>
-                    <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
-                </div>
+            <img className="profile" src={image}  />
                 <h3> { intro } </h3>
                 <div>             
                     <Typed
