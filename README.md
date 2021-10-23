@@ -13,27 +13,30 @@ The about_me component has 2 subcomponents, the header and the details. You can 
  #### 2. Details 
 
 ### 2. Timeline <br>
-name: timeline
+name: timeline <br>
 At this component you can add your experience and your education data.
 ![header](/images/timeline.PNG)
 
 ### 3. Skills <br>
-name: skills
+name: skills <b>
+At this component you can add your skills.
 ![skills](/images/skills.PNG)
 
 ### 4. Languages <br>
 name: languages
+ At this component you can add the language you speak.
 ![languages](/images/languages.PNG)
 
 ### 4. Projects <br>
 tag: projects
+ At this component you can add your projects.
 ![projecrs](/images/projects.PNG)
 
 ### 4. Contact me <br>
 name: contact_me_1
 ![contact_me_1](/images/contact_me_1.PNG)
  
-You can use an alternative contact_me component, called contact_me_2 but we strongly recommend using the contact_me_1. However, if your really want to use the second option you can use EmailJS. 
+You can use an alternative contact_me component, called contact_me_2 but we strongly recommend using the contact_me_1, which is shown below. However, if you really want to use the second option you can use EmailJS. 
 
 ![contact_me_2](/images/contact_me_2.PNG)
 <br>
