@@ -1,22 +1,24 @@
 {
-    "components":  ["about me", "timeline", "skills", "languages", "contact_me"],
+    "components":  ["about_me", "timeline", "skills", "languages", "projects", "contact_me"],
     
     "about_me": {
         "components": ["heading", "details"],
 
-        "intro": "Tami Dorota",
-        "list": ["Software Engineer", "Full stack developer"],
-
-        "full_name": "Temeka Dwight",
-        "description": "I am a full stack developer who enjoys working in an agile environment with a collaborative team. I am passionate about creating modular, scalable, smart looking web apps. I enjoy balancing the need for test driven and benchmark driven development, modern creative design, and task completion efficiency and quality. I specialize in. And node. J's full stack development.",
-        "email": "temeka-dwight@gmail.com",
-        "social_media": {
-            "linkedin": "#",
-            "github": "#",
-            "facebook": "#",
-            "instagram": "#"
+        "heading": {
+            "intro": "Tami Dorota",
+            "list": ["Software Engineer", "Full stack developer"]
+        },
+        "details":{
+            "full_name": "Temeka Dwight",
+            "description": "I am a full stack developer who enjoys working in an agile environment with a collaborative team. I am passionate about creating modular, scalable, smart looking web apps. I enjoy balancing the need for test driven and benchmark driven development, modern creative design, and task completion efficiency and quality. I specialize in. And node. J's full stack development.",
+            "email": "temeka-dwight@gmail.com",
+            "social_media": {
+                "linkedin": "https://github.com/",
+                "github": "https://github.com/",
+                "facebook": "https://github.com/",
+                "instagram": "https://github.com/"
+            }
         }
-
     },
 
     "timeline":{
@@ -60,26 +62,23 @@
     "projects": {
         "3": {
             "title": "Chess Game",
-            "description": "Chess is a game played between two opponents on opposite sides of ",
-            "sources": { "Github": "https://material-ui.com/components/grid/" },
-            "image": "tree.jpg"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis nibh id varius elementum. Donec consequat interdum ipsum ut vulputate. Etiam aliquet odio a metus euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Duis finibus diam et diam venenatis convallis. Quisque lobortis leo sed metus pharetra malesuada. Sed sed eleifend justo, in congue sem. Vestibulum vitae velit auctor, volutpat dolor et, ultricies est. Donec volutpat mattis est, ac rhoncus ipsum accumsan non. Duis sit amet vestibulum lectus. Phasellus et efficitur augue. Proin venenatis egestas diam, eu convallis risus ultricies et.",
+            "sources": { "github": "#" }
         },
         "2": {
             "title": "Hungry Snake Game",
-            "description": "",
-            "image": "tree.jpg"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis nibh id varius elementum. Donec consequat interdum ipsum ut vulputate. Etiam aliquet odio a metus euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Duis finibus diam et diam venenatis convallis. Quisque lobortis leo sed metus pharetra malesuada. Sed sed eleifend justo, in congue sem. Vestibulum vitae velit auctor, volutpat dolor et, ultricies est. Donec volutpat mattis est, ac rhoncus ipsum accumsan non. Duis sit amet vestibulum lectus. Phasellus et efficitur augue. Proin venenatis egestas diam, eu convallis risus ultricies et.",
+            "sources": { "github": "#", "web": "#" }
         },
         "1": {
             "title": "Super Mario Bros Clone",
-            "description": "The Super Mario games are typically in the fictional Mushroom Kingdom with Mario as the player character. ",
-            "sources": { "Github": "https://material-ui.com/components/grid/" },
-            "image": "tree.jpg"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis nibh id varius elementum. Donec consequat interdum ipsum ut vulputate. Etiam aliquet odio a metus euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Duis finibus diam et diam venenatis convallis. Quisque lobortis leo sed metus pharetra malesuada. Sed sed eleifend justo, in congue sem. Vestibulum vitae velit auctor, volutpat dolor et, ultricies est. Donec volutpat mattis est, ac rhoncus ipsum accumsan non. Duis sit amet vestibulum lectus. Phasellus et efficitur augue. Proin venenatis egestas diam, eu convallis risus ultricies et. ",
+            "sources": { "github": "#", "web": "#" }
         },
         "0": {
             "title": "Hungry Snake Game",
-            "description": "Hungry Snake Game is a fun and challenging mobile game to play. ",
-            "sources": { "Github": "https://material-ui.com/components/grid/" },
-            "image": "tree.jpg"
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis nibh id varius elementum. Donec consequat interdum ipsum ut vulputate. Etiam aliquet odio a metus euismod luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Duis finibus diam et diam venenatis convallis. Quisque lobortis leo sed metus pharetra malesuada. Sed sed eleifend justo, in congue sem. Vestibulum vitae velit auctor, volutpat dolor et, ultricies est. Donec volutpat mattis est, ac rhoncus ipsum accumsan non. Duis sit amet vestibulum lectus. Phasellus et efficitur augue. Proin venenatis egestas diam, eu convallis risus ultricies et.",
+            "sources": { "github": "#" }
         }
     },
 
@@ -88,31 +87,31 @@
             "title": "Go",
             "percentage": 80,
             "extra_text": "Good",
-            "color": "#f88"
+            "color": "#C29DB5"
         },
         "4": {
             "title": "Javascript",
             "percentage": 60,
             "extra_text": "Good",
-            "color": "#f88"
+            "color": "#C29DB5"
         },
         "2": {
             "title": "C++",
             "percentage": 100,
             "extra_text": "Good",
-            "color": "blue"
+            "color": "#404040"
         },
         "1": {
             "title": "Python",
             "percentage": 50,
             "extra_text": "Good",
-            "color": "#f88"
+            "color": "#C29DB5"
         },
         "0": {
             "title": "Java",
             "percentage": 100,
             "extra_text": "Good",
-            "color": "blue"
+            "color": "#404040"
         }
     },
     "languages":{
@@ -120,13 +119,15 @@
             "title": "English",
             "percentage": 100,
             "extra_text": "Native",
-            "color": "blue"
+            "color": "#404040"
         },
         "1": {
             "title": "Spanish",
             "percentage": 50,
             "extra_text": "Good",
-            "color": "#f88"
+            "color": "#C29DB5"
         }
-    }
+    },
+
+    "contact_me": ""
 }

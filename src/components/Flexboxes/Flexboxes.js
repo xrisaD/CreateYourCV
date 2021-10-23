@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box';
 
 function createBoxes(bars) {
   return bars.map((value) => {
-    console.log(value)
     return <Box
             p={1}>
             <p> {value} </p> 

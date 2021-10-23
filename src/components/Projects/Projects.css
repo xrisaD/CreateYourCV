@@ -17,3 +17,11 @@
     cursor: pointer;
   }
 
+  .carousel_image {
+    height: 65vh;
+  }
+
+  .carousel_background {
+    background-color: var(--primary-dark);
+    min-height: 70vh;
+  }

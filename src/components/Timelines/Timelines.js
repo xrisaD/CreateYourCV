@@ -20,7 +20,7 @@ export const Timelines = (props) => {
   const childs = (data) => {
     return (
       Object.values(data).reverse().map((value) =>{
-        return <CustomTimelineChild value={value}/>
+        return <CustomTimelineChild value={value} key={value.title} />
       })
     );
   }

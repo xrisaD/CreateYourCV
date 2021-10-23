@@ -45,6 +45,9 @@
   text-align: center;
 }
 
+.outside {
+  min-height: 100vh;
+}
 
 /*------------ FONT ------------*/
 

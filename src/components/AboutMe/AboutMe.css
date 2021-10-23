@@ -52,3 +52,8 @@
 .typed-text {
   font-size: 2rem;
 }
+
+.paper {
+  padding: '20px';
+  margin: '20px'
+}

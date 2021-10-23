@@ -2,14 +2,15 @@ import "./Navbar.css";
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from '../../images/logo.png';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link, Events, animateScroll as scroll, scroller } from 'react-scroll';
 import { Navbar, Nav } from "react-bootstrap";
 
 const mapping = {
-    "about me": "About Me",
+    "about_me": "About Me",
     "timeline" : "Timeline",
     "projects": "Projects",
-    "contact_me": "Contact Me",
+    "contact me anonymously": "Contact Me",
+    "contact me": "Contact Me",
     "skills": "Skills",
     "languages": "Languages"
 }
@@ -19,8 +20,8 @@ const addComponents = (components) =>  {
     var arrayLength = components.length;
     for (var i = 0; i < arrayLength; i++) {
         arrayOfLis.push(
-        <li className="nav-item">
-            <Link className="nav-link" to={components[i] } smooth={true} spy={true}> 
+        <li className="nav-item" key={i}>
+            <Link className="nav-link" to={components[i] } spy={true}> 
                 { mapping[components[i]] } 
             </Link>
         </li>);

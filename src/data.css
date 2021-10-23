@@ -2,6 +2,6 @@
 :root {
     --primary-white: #FFFAFA;
     --primary-basic-color: #C29DB5;
-    --primary-dark: rgba(255, 255, 255, 0);
+    --primary-dark: #404040;
     --header-image: url('./images/header_photo.jpg');
   }

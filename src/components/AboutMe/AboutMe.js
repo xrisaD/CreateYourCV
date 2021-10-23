@@ -7,16 +7,9 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Typed from 'react-typed';
 import ReactRoundedImage from "react-rounded-image";
-import MyPhoto from "../../images/generated_photos.jpg";
-import { makeStyles } from '@material-ui/core/styles';
+import MyPhoto from "../../images/profile.jpg";
 import Box from '@material-ui/core/Box';
 
-const useStyles = makeStyles((theme) => ({
-    paper: {
-      padding: '20px',
-      margin: '20px'
-    }
-}));
 
 
 const social_media_mapping = {
@@ -28,10 +21,10 @@ const social_media_mapping = {
 
 const AddSocialMedia = (data) => {
     const arrayOfSocial = [];    
-    for (const [key, value] of Object.entries(data.social_media)) {
+    for (const [key, value] of Object.entries(data)) {
         arrayOfSocial.push(
-            <Box p={1}>
-            <a href={value}>
+            <Box p={1} key={key}>
+            <a href={value} key="value">
                 { social_media_mapping[key] }
             </a>
             </Box>);
@@ -40,57 +33,67 @@ const AddSocialMedia = (data) => {
 }
 
 const AddHeading = (props) => {
-    var intro = props.data.intro
-    var list = props.data.list
-    if (props.data.components.includes("heading")){
-        return (
-            <div className="first-wrapper">
-                <div className="main-info">
-                    <div style={{ display: "flex" }}>
-                        <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
-                    </div>
-                    <h3> { intro } </h3>
-                    <div>             
-                        <Typed
-                            className="typed-text"
-                            strings={list}
-                            typeSpeed={40}
-                            backSpeed={60}
-                            loop
-                        />
-                    </div>  
+    var intro = props.intro
+    var list = props.list
+    return (
+        <div className="first-wrapper">
+            <div className="main-info">
+                <div style={{ display: "flex" }}>
+                    <ReactRoundedImage image={MyPhoto} roundedSize="0" imageWidth="200" imageHeight="200" />
                 </div>
+                <h3> { intro } </h3>
+                <div>             
+                    <Typed
+                        className="typed-text"
+                        strings={list}
+                        typeSpeed={40}
+                        backSpeed={60}
+                        loop
+                    />
+                </div>  
             </div>
+        </div>
+    )
+}
+
+const AddDetails = (props) => {
+    return (
+        <div className="description" key="description">   
+            <div className="social-media" key="social_media">
+                <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" p={1} m={1} >
+                    { AddSocialMedia(props.social_media) }
+                </Box>
+            </div>
+            <Box m={2} pt={3} pb={3}>
+                <Paper elevation={3} className="paper">
+                    {props.description}  
+                </Paper>
+            </Box>
+        </div>
+    )
+}
+
+const CheckDetails = (props) => {
+    if (props.components.includes("details")){
+        return (
+            AddDetails(props.details)
         )
     }
 }
 
-const AddDetails = (props) => {
-    const classes = useStyles();
-    if (props.data.components.includes("details")){
+const CheckHeading = (props) => {
+    if (props.components.includes("heading")){
         return (
-            <div className="description">   
-                <div className="social-media">
-                    <Box display="flex" flexDirection="row" justifyContent="center" flexWrap="wrap" p={1} m={1} >
-                        { AddSocialMedia(props.data) }
-                    </Box>
-                </div>
-                <Box m={2} pt={3} pb={3}>
-                    <Paper elevation={3} className={classes.paper}>
-                        {props.data.description}  
-                    </Paper>
-                </Box>
-            </div>
+            AddHeading(props.heading)
         )
     }
-    
 }
 
 export const AboutMe = (props) => {
     return (
-        <div class="header-wrapper">
-            { AddHeading(props) }
-            { AddDetails(props) }
+        <div className="header-wrapper" key="about_me">
+            { CheckHeading(props.data) }
+            { CheckDetails(props.data) }
         </div>
     )
 }
