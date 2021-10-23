@@ -27,7 +27,7 @@ At this component you can add your skills.
 ![skills](/images/skills.PNG)
 
 ### 4. Languages <br>
-name: languages
+name: languages <br>
  At this component you can add the language you speak.
 ![languages](/images/languages.PNG)
 
