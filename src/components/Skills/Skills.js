@@ -6,8 +6,9 @@ import Flexboxes from "../Flexboxes/Flexboxes";
  
 function createBars(skills) {
     var bars = {};
-    Object.entries(skills).forEach(([key, value]) =>{     
-            bars.key = 
+    Object.entries(skills).forEach(([key, value]) =>{ 
+            console.log(key)    
+            bars[key] = 
             (<CircularProgressbarWithChildren key = {key} value={value.percentage} styles={buildStyles({pathColor: value.color})} >
                 <p> {value.title} </p>
                 <p> {value.extra_text}</p>

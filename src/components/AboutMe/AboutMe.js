@@ -30,7 +30,7 @@ const AddSocialMedia = (data) => {
     return arrayOfSocial;
 }
 
-const AddHeading = (props) => {
+const AddHeader = (props) => {
     var intro = props.intro
     var list = props.list
     var filename = props.photo_profile
@@ -79,10 +79,10 @@ const CheckDetails = (props) => {
     }
 }
 
-const CheckHeading = (props) => {
-    if (props.components.includes("heading")){
+const CheckHeader = (props) => {
+    if (props.components.includes("header")){
         return (
-            AddHeading(props.heading)
+            AddHeader(props.header)
         )
     }
 }
@@ -90,7 +90,7 @@ const CheckHeading = (props) => {
 export const AboutMe = (props) => {
     return (
         <div className="basic-wrapper" key="about_me">
-            { CheckHeading(props.data) }
+            { CheckHeader(props.data) }
             { CheckDetails(props.data) }
         </div>
     )

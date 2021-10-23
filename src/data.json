@@ -4,9 +4,9 @@
     "logo": "logo.png",
     
     "about_me": {
-        "components": ["heading", "details"],
+        "components": ["header", "details"],
 
-        "heading": {
+        "header": {
             "intro": "Tami Dorota",
             "list": ["Software Engineer", "Full stack developer"],
             "photo_profile": "profile.jpg"
