@@ -9,8 +9,7 @@ const mapping = {
     "about_me": "About Me",
     "timeline" : "Timeline",
     "projects": "Projects",
-    "contact me anonymously": "Contact Me",
-    "contact me": "Contact Me",
+    "contact_me": "Contact Me",
     "skills": "Skills",
     "languages": "Languages"
 }
