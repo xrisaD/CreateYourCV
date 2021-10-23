@@ -32,7 +32,7 @@ name: languages
 ![languages](/images/languages.PNG)
 
 ### 4. Projects <br>
-tag: projects
+tag: projects <br>
  At this component you can add your projects.
 ![projecrs](/images/projects.PNG)
 
