@@ -22,7 +22,7 @@ At this component you can add your experience and your education data.
 ![header](/images/timeline.PNG)
 
 ### 3. Skills <br>
-name: skills <b>
+name: skills <br>
 At this component you can add your skills.
 ![skills](/images/skills.PNG)
 
