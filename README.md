@@ -1,5 +1,11 @@
 # CreateYourCV
 Create a perfect CV website in just a few steps.
+
+You can style your CV by changing two files: data.json and data.css.
+The data.json file contais your information and consists of the following 6 components: about_me, timeline, projects, skills, languages, contact_me. You can include the components you want, it is not necessary to include all of them. 
+
+
+
 ### Step 1:
 Clone the repository and open ./cv folder.
 All you have to do is to update the files/directories with files start from "data". More specifically, "data.css" and "data.json".
