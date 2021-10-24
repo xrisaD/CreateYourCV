@@ -5,6 +5,7 @@ All you have to do is to parameterize the following files: data.json and data.cs
 * The data.json file contains the information and consists of the following 6 components: about_me, timeline,  skills, languages, projects, contact_me_1, contact_me_2. You can include the components you want, it is not necessary to include all of them. The order you put them is the order they will be shown. Some data has the following structure: {"0":{}, "1":{}}. The numbers define the order the data of this structure will be shown. Last but not least, you have to place all the images which you will use under the src/images directory.
 * The data.css file contains the colors that your CV will have. All you have to do is to change the parameters with the colors you want. Also, if you want to include the header subcomponent you have to set the name of the image there and put the image under the src/images/ directory. The rest of the photos that will be used will be added at the same folder but you need to define their names inside the data.json file. Don't worry about it for now, it will be clear later. 😊
 
+## The Components:
 ### 1. About Me <br>
 name: about_me <br>
 The about_me component has 2 subcomponents, the header and the details. You can skip any of them, if you want.
