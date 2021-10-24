@@ -48,5 +48,3 @@ You can use an alternative contact_me component, called contact_me_2 but we stro
 <br>
 ### You can follow the given example and add your own data. 😊
 The given example is placed under the src file. This is the right place that the data.json and data.css files should be.
-
-## How to start?
