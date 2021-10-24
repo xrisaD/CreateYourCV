@@ -14,7 +14,7 @@ The about_me component has 2 subcomponents, the header and the details. You can 
 
   #### 2. Details 
   name: details <br>
-  The available social media is the following: linkedin, github, facebook and instagram. You don't have to include all of them.
+  The available social media options are the following: linkedin, github, facebook and instagram. You don't have to include all of them.
   ![details](/images/details.PNG)
 
 ### 2. Timeline <br>
