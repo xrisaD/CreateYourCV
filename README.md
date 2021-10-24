@@ -29,7 +29,7 @@ At this component you can add your skills.
 
 ### 4. Languages <br>
 name: languages <br>
- At this component you can add the language you speak.
+ At this component you can add the languages you speak.
 ![languages](/images/languages.PNG)
 
 ### 4. Projects <br>
@@ -47,3 +47,6 @@ You can use an alternative contact_me component, called contact_me_2 but we stro
 <br>
 <br>
 ### You can follow the given example and add your own data. 😊
+The given example is placed under the src file. This is the right place that the data.json and data.css files shoule be.
+
+## How to start?
